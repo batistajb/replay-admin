@@ -1,0 +1,16 @@
+include:
+  - ../postgres/docker-compose.yaml
+
+services:
+  replay-admin:
+    build: .
+    ports:
+      - 8000:8000
+    environment:
+      - DATABASE_URL=postgres://postgres:root@postgres:5432/admin_replay
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+      - ASSETS_URL=http://host.docker.internal:9000/media/uploads
+    volumes:
+      - .:/home/replay/app
+    extra_hosts:
+      - host.docker.internal:127.0.0.1
