@@ -12,4 +12,6 @@ USER replay
 
 WORKDIR /home/replay/app
 
-CMD tail -f /dev/null
+COPY . .
+
+CMD ["./start.sh"]

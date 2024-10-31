@@ -1,0 +1,4 @@
+# .gitattributes
+
+start.sh text eol=lf
+core/migrations/0003_address_alter_client_options_alter_media_options_and_more.py text eol=lf
