@@ -49,4 +49,4 @@ jobs:
       - name: Applying changes
         working-directory: deployment
         run: |
-          kubectl apply -k . -n replay
+          kubectl apply -k .
