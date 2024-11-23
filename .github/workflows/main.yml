@@ -47,7 +47,7 @@ jobs:
       
       - name: Updating Kub Config File
         run: |
-          aws eks update-kubeconfig --region ${{ vars.AWS_REGION }} --name ${{ vars.EKS_CLUSTER_NAME }}
+          aws eks update-kubeconfig --region ${{ vars.AWS_REGION }} --name ${{ vars.EKS_CLUSTER_NAME }}-${GITHUB_REF#refs/heads/}
       
       - name: Applying changes
         working-directory: deployment
