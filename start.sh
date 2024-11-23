@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-tail -f /dev/null
-
 pipenv install
 pipenv shell
 python manage.py makemigrations
