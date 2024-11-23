@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app-replay-web
+  name: app-replay-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-replay-web
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: app-replay-web
+    spec:
+      containers:
+      - image: 412381767038.dkr.ecr.us-east-1.amazonaws.com/app-replay-web
+        name: app-replay-web
+        resources: {}
+status: {}
