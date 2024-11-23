@@ -146,7 +146,7 @@ DATABASES = {
     #     'HOST': 'db',
     #     'PORT': '5432',
     # }
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL') or 'sqlite:///db.sqlite3')
 }
 
 

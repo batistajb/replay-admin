@@ -4,4 +4,4 @@ resources:
 images:
   - name: 412381767038.dkr.ecr.us-east-1.amazonaws.com/app-replay-web
     newName: 412381767038.dkr.ecr.us-east-1.amazonaws.com/app-replay-web
-    newTag: 1.0.0
+    newTag: b2312d599eff89ca4306af5e21222544fe32cb51
