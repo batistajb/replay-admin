@@ -1,6 +1,9 @@
 on:
   workflow_dispatch:
   push:
+    branches:
+      - prd
+      - stg
 jobs:
   appReplayWebJob:
     name: App Replay Web Deployment on EKS Cluster
