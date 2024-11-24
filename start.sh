@@ -6,6 +6,10 @@ pipenv install
 echo "Activate virtual environment"
 source $(pipenv --venv)/bin/activate
 
+pip install python-dotenv
+
+#pip install boto3 django-storages
+
 echo "Make migrations and migrate"
 python manage.py makemigrations
 python manage.py migrate
